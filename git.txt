@@ -1,4 +1,51 @@
 Wichtigste Git Befehle 
 
+github IDE/GUI
+
+lokale Sicht und remote Sicht 
+-> solange man nichts pusht, ändern sich auch remote nichts
+
+Wichtige Befehle 
+- git fetch: lokales repo auf Stand vom Remote  (macht Sinn um aktuell zu bleiben)
+- git checkout <branchname> -> geht zu dem Brnach  (lokale Änderungen können verloren gehen)
+- git checkout -b <neuer branch> -> eröffnet <neuer branch> und geht da direkt hin
+- git checkout -  -> geht zum letzten 
+
+Von Lokal auf Remote wenn es den branch remote noch nicht gibt 
+- git push --set-upstream origin <neuer branch>   (origin = name der remote seite, man könnte mehrere remotes haben, ist eher unwahrscheinlich) 
+
+Wenn neuer Branch auf den Master soll:
+- online auf gitlab "merge request" -> ausfüllen
+
+git reset  HEAD~1 -> resettet den branch auf den letzten commit
+
+
+- git stash -> lokale Änderungen auf Stapel seit letztem commit 
+- git stash pop -> letzen Stash vom stack lokal zurück 
+- git stash show  
+
+
+Anderen branch pullen
+- git pull origin <branchname>
+
+
+merge conflict:
+bei merge commit keine <message> eingeben, wird eh als merge commit erkannt 
+
 
 Branch eröffnen mit Aktuellen Änderungen 
+
+
+
+am besten vor dem Ändern einen lokalen branch abzweigen 
+
+
+
+
+- git checkout -b <neuer branch>
+- git add .
+- git commit -"<message>"
+- git push --set-upstream origin <neuer branch>
+- danach merge request stellen 
+
+
